@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sensores de proximidad</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+body{margin:0}
+a{color:#0F4C5C}a:hover{color:#11181C}
+</style>
+</head>
+<body>
+<div style="background: #F1F3F2; color: #11181C; font-family: 'Inter', system-ui, sans-serif; font-size: 18px; line-height: 1.6">
+
+<header style="max-width: 1120px; margin: 0 auto; padding: 16px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 8px 32px; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px">
+<span style="display: inline-block; width: 14px; height: 14px; box-sizing: border-box; border-radius: 50%; background: #FFC20E; border: 2px solid #11181C"></span>
+<span>Sensores de proximidad</span>
+</div>
+<nav style="display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 15px; font-weight: 500">
+<a href="#importancia" style="display: inline-flex; align-items: center; min-height: 44px; text-decoration: none">Importancia</a>
+<a href="#funciona" style="display: inline-flex; align-items: center; min-height: 44px; text-decoration: none">Cómo funcionan</a>
+<a href="#tipos" style="display: inline-flex; align-items: center; min-height: 44px; text-decoration: none">Tipos</a>
+<a href="#accidentes" style="display: inline-flex; align-items: center; min-height: 44px; text-decoration: none">Accidentes</a>
+<a href="#historia" style="display: inline-flex; align-items: center; min-height: 44px; text-decoration: none">Evolución</a>
+</nav>
+</header>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 48px 24px 96px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px; align-items: flex-start">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #0F4C5C">Electrónica y seguridad</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 72px); line-height: 1.02; letter-spacing: -0.02em; text-wrap: balance">Detectar el obstáculo antes de que sea un accidente</h1>
+<p style="margin: 0; max-width: 560px; font-size: 20px; color: #2B373D">Un sensor de proximidad mide la distancia a un objeto sin tocarlo y avisa o actúa en milisegundos. Con chips baratos y un poco de software, esa capacidad convirtió la prevención de choques y golpes en algo automático.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center">
+<a href="#accidentes" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #11181C; color: #FFC20E; font-weight: 600; font-size: 16px; text-decoration: none; border-radius: 4px">Ver cómo reducen accidentes</a>
+<a href="#funciona" style="display: inline-flex; align-items: center; min-height: 48px; font-weight: 600; font-size: 16px">Cómo funciona un sensor</a>
+</div>
+</div>
+<div style="flex: 0 0 auto; position: relative; width: 320px; max-width: 100%; height: 320px; background: #FFC20E; border-radius: 6px; overflow: hidden" aria-hidden="true">
+<div style="position: absolute; left: -21px; top: 105px; width: 110px; height: 110px; box-sizing: border-box; border-radius: 50%; border: 2px solid #11181C"></div>
+<div style="position: absolute; left: -71px; top: 55px; width: 210px; height: 210px; box-sizing: border-box; border-radius: 50%; border: 2px solid #11181C"></div>
+<div style="position: absolute; left: -121px; top: 5px; width: 310px; height: 310px; box-sizing: border-box; border-radius: 50%; border: 2px solid #11181C"></div>
+<div style="position: absolute; left: -171px; top: -45px; width: 410px; height: 410px; box-sizing: border-box; border-radius: 50%; border: 2px solid #11181C"></div>
+<div style="position: absolute; left: -221px; top: -95px; width: 510px; height: 510px; box-sizing: border-box; border-radius: 50%; border: 2px solid #11181C"></div>
+<div style="position: absolute; left: 24px; top: 150px; width: 20px; height: 20px; background: #11181C; border-radius: 4px"></div>
+<div style="position: absolute; left: 262px; top: 110px; width: 26px; height: 100px; background: #11181C; border-radius: 4px"></div>
+<div style="position: absolute; left: 16px; bottom: 16px; padding: 4px 10px; background: #11181C; color: #FFC20E; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; border-radius: 4px">eco 5,8 ms → 1 m</div>
+</div>
+</section>
+
+<section id="importancia" style="border-top: 1px solid #C5CED0">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.01em; text-wrap: balance">Por qué importan los sensores de proximidad</h2>
+<p style="margin: 0; color: #2B373D">Casi todo accidente de choque, atrapamiento o golpe empieza con algo simple: alguien o algo estaba demasiado cerca y nadie lo notó a tiempo. Un sensor de proximidad convierte esa cercanía en un número que una máquina puede leer.</p>
+<p style="margin: 0; color: #2B373D">Con ese número, un circuito decide en un instante si debe encender una alarma, frenar un vehículo o detener una prensa. La persona sigue al mando, pero ya no depende solo de su atención.</p>
+</div>
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column">
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-direction: column; gap: 4px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 17px"></div>
+</div>
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-direction: column; gap: 4px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 17px"></div>
+</div>
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-direction: column; gap: 4px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 17px"></div>
+</div>
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-direction: column; gap: 4px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 17px"></div>
+</div>
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-direction: column; gap: 4px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 17px"></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="funciona" style="background: #E4E9E8">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 700px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.01em; text-wrap: balance">Cómo piensa un sensor: del eco a la acción</h2>
+<p style="margin: 0; color: #2B373D">Casi todos siguen la misma cadena, sea cual sea la tecnología. Cambia lo que emiten (ondas sonoras, luz, ondas de radio o un campo magnético), pero no el orden.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px 24px">
+
+<div style="flex: 1 1 180px; min-width: 0; padding-top: 16px; border-top: 3px solid #11181C; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.12em; color: #0F4C5C">PASO </div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px"></div>
+<div style="color: #2B373D; font-size: 16px; line-height: 1.55"></div>
+</div>
+
+<div style="flex: 1 1 180px; min-width: 0; padding-top: 16px; border-top: 3px solid #11181C; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.12em; color: #0F4C5C">PASO </div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px"></div>
+<div style="color: #2B373D; font-size: 16px; line-height: 1.55"></div>
+</div>
+
+<div style="flex: 1 1 180px; min-width: 0; padding-top: 16px; border-top: 3px solid #11181C; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.12em; color: #0F4C5C">PASO </div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px"></div>
+<div style="color: #2B373D; font-size: 16px; line-height: 1.55"></div>
+</div>
+
+<div style="flex: 1 1 180px; min-width: 0; padding-top: 16px; border-top: 3px solid #11181C; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.12em; color: #0F4C5C">PASO </div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px"></div>
+<div style="color: #2B373D; font-size: 16px; line-height: 1.55"></div>
+</div>
+
+<div style="flex: 1 1 180px; min-width: 0; padding-top: 16px; border-top: 3px solid #11181C; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.12em; color: #0F4C5C">PASO </div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px"></div>
+<div style="color: #2B373D; font-size: 16px; line-height: 1.55"></div>
+</div>
+
+</div>
+<div style="background: #11181C; color: #F1F3F2; border-radius: 6px; padding: 40px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #FFC20E">Ejemplo con ultrasonido</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; line-height: 1.2">El sensor de un parachoques mide cuánto tarda el eco en volver.</div>
+<div style="font-size: 16px; color: #C9D3D6">El sonido viaja ida y vuelta, así que el tiempo medido se divide entre dos. Si el eco vuelve en 5,8 milisegundos, el obstáculo está a cerca de un metro y el pitido del parqueo empieza a acelerarse.</div>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 8px; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 17px">
+<div style="color: #FFC20E">d = v × t ÷ 2</div>
+<div>d = 343 m/s × 0,0058 s ÷ 2</div>
+<div>d ≈ 0,99 m</div>
+<div style="font-size: 13px; color: #A9B6BA">343 m/s es la velocidad del sonido en aire a unos 20 °C.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="tipos">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 700px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.01em; text-wrap: balance">Seis tecnologías, un mismo trabajo</h2>
+<p style="margin: 0; color: #2B373D">Cada tipo detecta mejor un material o una distancia distinta. Por eso un carro moderno y una fábrica combinan varios a la vez.</p>
+</div>
+<div style="display: flex; flex-direction: column">
+
+<div style="padding: 24px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 16px 32px">
+<div style="flex: 1 1 160px; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.2"></div>
+<div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Principio</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Alcance típico</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 2 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Dónde evita accidentes</div>
+<div style="font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 24px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 16px 32px">
+<div style="flex: 1 1 160px; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.2"></div>
+<div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Principio</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Alcance típico</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 2 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Dónde evita accidentes</div>
+<div style="font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 24px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 16px 32px">
+<div style="flex: 1 1 160px; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.2"></div>
+<div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Principio</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Alcance típico</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 2 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Dónde evita accidentes</div>
+<div style="font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 24px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 16px 32px">
+<div style="flex: 1 1 160px; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.2"></div>
+<div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Principio</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Alcance típico</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 2 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Dónde evita accidentes</div>
+<div style="font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 24px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 16px 32px">
+<div style="flex: 1 1 160px; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.2"></div>
+<div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Principio</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Alcance típico</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 2 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Dónde evita accidentes</div>
+<div style="font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 24px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 16px 32px">
+<div style="flex: 1 1 160px; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.2"></div>
+<div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Principio</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Alcance típico</div>
+<div style="font-size: 16px"></div>
+</div>
+<div style="flex: 2 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5A61">Dónde evita accidentes</div>
+<div style="font-size: 16px"></div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="accidentes" style="background: #E4E9E8">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.01em; text-wrap: balance">Cómo la electrónica ayudó a reducir los accidentes</h2>
+<p style="margin: 0; color: #2B373D">El cambio de fondo fue pasar de la advertencia a la acción. Primero los sensores solo avisaban. Cuando el costo de los microcontroladores bajó, empezaron a frenar, detener o impedir el movimiento por su cuenta.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 40px 32px">
+
+<div style="flex: 1 1 300px; min-width: 0; padding-top: 20px; border-top: 6px solid #FFC20E; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.15"></div>
+<div style="color: #2B373D; font-size: 16px"></div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+</div>
+</div>
+
+<div style="flex: 1 1 300px; min-width: 0; padding-top: 20px; border-top: 6px solid #FFC20E; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.15"></div>
+<div style="color: #2B373D; font-size: 16px"></div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+</div>
+</div>
+
+<div style="flex: 1 1 300px; min-width: 0; padding-top: 20px; border-top: 6px solid #FFC20E; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.15"></div>
+<div style="color: #2B373D; font-size: 16px"></div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 600; font-size: 16px"></div>
+<div style="color: #4A5A61; font-size: 16px; line-height: 1.5"></div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div style="background: #FFC20E; border-radius: 6px; padding: 40px; display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center">
+<div style="flex: 1 1 360px; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(24px, 3vw, 34px); line-height: 1.2; text-wrap: balance">El frenado automático de emergencia reduce los choques por alcance en una proporción cercana a la mitad.</div>
+<div style="flex: 1 1 280px; min-width: 0; font-size: 15px; line-height: 1.55">Estudios del Insurance Institute for Highway Safety (IIHS) y de otros grupos de investigación en Estados Unidos reportan reducciones de entre 40 % y 50 % según el estudio y el tipo de vehículo. Son cifras de ese país y de esos modelos; la reducción real depende del sistema y de la vía. Fuente: <a href="https://www.iihs.org/news/detail/front-crash-prevention-slashes-police-reported-rear-end-crashes" style="color: #11181C">IIHS</a>.</div>
+</div>
+</div>
+</section>
+
+<section id="historia">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.01em; text-wrap: balance">De un interruptor a un sistema que decide</h2>
+<p style="margin: 0; color: #2B373D">Las fechas son aproximadas: cada tecnología llegó antes a la industria y después a los automóviles de uso diario.</p>
+</div>
+<div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column">
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 8px 32px">
+<div style="flex: 0 0 150px; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 14px; letter-spacing: 0.04em; color: #0F4C5C"></div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 8px 32px">
+<div style="flex: 0 0 150px; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 14px; letter-spacing: 0.04em; color: #0F4C5C"></div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 8px 32px">
+<div style="flex: 0 0 150px; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 14px; letter-spacing: 0.04em; color: #0F4C5C"></div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 8px 32px">
+<div style="flex: 0 0 150px; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 14px; letter-spacing: 0.04em; color: #0F4C5C"></div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 16px"></div>
+</div>
+</div>
+
+<div style="padding: 20px 0; border-top: 1px solid #C5CED0; display: flex; flex-wrap: wrap; gap: 8px 32px">
+<div style="flex: 0 0 150px; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 14px; letter-spacing: 0.04em; color: #0F4C5C"></div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25"></div>
+<div style="color: #4A5A61; font-size: 16px"></div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section style="background: #E4E9E8">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 40px 48px">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.01em; text-wrap: balance">Lo que un sensor todavía no resuelve</h2>
+<p style="margin: 0; color: #2B373D">Ninguno ve todo. La lluvia fuerte, el barro sobre el sensor, un objeto muy delgado o un ángulo difícil pueden hacerlo fallar. Por eso los vehículos actuales combinan cámaras, radar y ultrasonido, y comparan sus lecturas antes de actuar.</p>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.25">La tecnología ayuda a la atención, no la reemplaza.</div>
+<p style="margin: 0; color: #2B373D">Un buen sistema de proximidad reduce el margen de error humano, pero conducir, operar una máquina o cruzar una calle sigue exigiendo cuidado. Los sensores son una capa más de seguridad, y funcionan mejor cuando se mantienen limpios y se revisan.</p>
+</div>
+</div>
+</section>
+
+<footer style="background: #11181C; color: #F1F3F2">
+<div style="max-width: 1120px; margin: 0 auto; padding: 56px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 400px; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(24px, 3vw, 32px); line-height: 1.2; text-wrap: balance">Medir la distancia a tiempo es la forma más barata de evitar un accidente.</div>
+<div style="flex: 0 1 280px; min-width: 0; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; color: #A9B6BA; line-height: 1.6">Sensores de proximidad: importancia y aporte de la electrónica a la seguridad.</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
